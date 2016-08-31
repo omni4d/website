@@ -1,0 +1,9 @@
+{% macro render_draft_warning(page, from_index=false) %}
+    {% if page.draft %}
+        <div class="alert alert-warning" role="alert">
+          <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            We are still working on this page. It's not finished yet!  
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></p>
+        </div>
+    {% endif %}
+{% endmacro %}

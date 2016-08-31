@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% from "macros/header.html" import render_header %}
+{% from "macros/draft.html" import render_draft_warning %}
+{% from "macros/children.html" import render_child_links %}
+{% from "macros/sidebar.html" import render_sidebar %}
+
+{% block title %}
+  {{ this.title }}
+{% endblock %}
+
+{% block header %}
+  {{ render_header(this) }}
+{% endblock %}
+
+{% block body %}
+  <div class="row-fluid">
+    <div class="col-sm-12 col-md-8">
+      {{ render_draft_warning(this) }}
+      {{ this.body }}
+      {{ render_child_links(this) }}
+    </div>
+      {{ render_sidebar(this) }}
+  </div>
+{% endblock %}

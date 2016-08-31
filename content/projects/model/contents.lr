@@ -1,0 +1,13 @@
+_model: page
+---
+title: Model
+---
+sort_order: 1
+---
+summary: Using [YAML](https://en.wikipedia.org/wiki/YAML) to define Omni4D models in both human and machine readable, platform agnostic format.
+---
+sidebar: The code repository for this project is available at [Github](https://github.com/omni4d/model)
+---
+draft: no
+---
+show_children: yes

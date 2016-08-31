@@ -1,0 +1,8 @@
+{% macro render_child_links(page, from_index=false) %}
+    {% if page.show_children %}
+        {% for child in page.children %}
+            <h2><a href="{{ child|url }}">{{ child.title }}</a></h2>
+            <p>{{ child.summary }}</p>
+        {% endfor %}
+    {% endif %}
+{% endmacro %}

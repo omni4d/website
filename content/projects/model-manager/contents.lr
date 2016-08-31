@@ -1,0 +1,13 @@
+_model: page
+---
+title: Model Manager
+---
+sort_order: 2
+---
+summary: A command line tool to import Omni4D models from [YAML](https://en.wikipedia.org/wiki/YAML) files into a database implementation.
+---
+sidebar: The code repository for this project is available at [Github](https://github.com/omni4d/model-manager)
+---
+draft: no
+---
+show_children: yes

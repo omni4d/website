@@ -1,0 +1,20 @@
+_model: page
+---
+title: Communication Channels
+---
+sort_order: 3
+---
+summary: Get in touch or stay in touch with other members of the team.
+---
+body:
+
+# Online Chat
+We have a [Gitter chat room](https://gitter.im/omni4d/general) where you can normally find one of the core team.
+
+The 'Open Chat' button at the bottom of this page will open the chat room within your browser.
+
+Please be aware that the chat room is public and its content is visible to anyone. If you need to chat privately with one of the core team, start a private chat rather than using the main room.
+---
+draft: no
+---
+show_children: yes

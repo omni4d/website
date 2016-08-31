@@ -1,0 +1,16 @@
+_model: page
+---
+title: Core Team
+---
+sort_order: 2
+---
+body:
+
+* Owen Campbell - [Chat privately on Gitter](https://gitter.im/meatballs), [Contact via Twitter](https://twitter.com/opcampbell)
+* Andrew Harmer - [Chat privately on Gitter](https://gitter.im/remrah64)
+---
+summary: The key individuals behind the Omni4D project
+---
+draft: no
+---
+show_children: yes

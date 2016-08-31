@@ -1,0 +1,14 @@
+[project]
+name = Omni4D
+
+[servers.github]
+name = Live Website
+enabled = yes
+default = yes
+target = ghpages://omni4d/omni4d.github.io?cname=omni4d.org
+default = yes
+
+[servers.ghpages-https]
+name = Travis Server
+enabled = yes
+target = ghpages+https://omni4d/omni4d.github.io?cname=omni4d.org

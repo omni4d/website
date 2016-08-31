@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>{% block title %}Welcome{% endblock %} — Omni4D</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/95cb22ca84.js"></script>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" type="text/css" href="/static/omni4d.css">
+
+    <!-- Fav icon -->
+    <link rel="shortcut icon" href="static/images/omni4d-32x32.png">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Omni4D</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            {% for id, item in bag('menu').items() %}
+            <li{% if this.is_child_of(item.path) %} class="active"{% endif
+              %}><a href="{{ item.path|url }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content">
+      {% block header %}{% endblock %}
+      <div class="container">
+        {% block body %}{% endblock %}
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-muted">
+        <div class="row">
+          <div class="col-sm-4 col-md-2 col-lg-2 col-xl-1 icon-bar">
+          <a href="https://github.com/omni4d/" title="Omni4D on GitHub"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/omni4d/" title="Omni4D on Twitter"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+          <a href="https://gitter.im/omni4d/model" title="Chat on Gitter"><i class="fa fa-comment fa-lg"></i></a>
+          <p>&copy; Owen Campbell 2016</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Gitter Sidecar -->
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+        room: 'omni4d/general'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+  </body>
+</html>

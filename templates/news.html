@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% from "macros/news.html" import render_news_story %}
+{% from "macros/pagination.html" import render_pagination %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block header %}
+  <div class="jumbotron">
+      <div class="container">
+        <h1>{{ this.title }}</h1>
+        <p>{{ this.summary }}</p>
+    </div>
+  </div>
+{% endblock %}
+{% block body %}
+  <div class="container">
+    <div class="row-fluid">
+      <div class="hidden-md-down col-md-6 col-lg-6 col-xl-6">
+        {% for child in this.pagination.items %}
+          {{ render_news_story(child, from_index=true) }}
+        {% endfor %}
+
+        {{ render_pagination(this.pagination) }}
+        </div>
+    </div>
+  </div>
+{% endblock %}

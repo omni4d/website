@@ -1,0 +1,7 @@
+{% macro render_sidebar(page, from_index=false) %}
+    {% if page.sidebar %}
+        <div class="col-sm-12 col-md-4 sidebar">
+          {{ page.sidebar }}
+        </div>
+  {% endif %}
+{% endmacro %}

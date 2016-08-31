@@ -1,0 +1,11 @@
+_model: page
+---
+title: 4 Dimensional Modelling
+---
+draft: yes
+---
+show_children: yes
+---
+sort_order: 2
+---
+summary: An explanation of the 4-dimensional, spatio-temporal aspects of an Omni4D model and the principle of strong reference.
