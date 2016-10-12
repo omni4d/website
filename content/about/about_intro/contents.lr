@@ -1,0 +1,27 @@
+_model: page
+---
+title: Introduction
+---
+draft: yes
+---
+show_children: yes
+---
+body:
+
+# Our purpose
+
+We are aiming to create a framework that enables the real world to be far better represented in computer systems. Currently, there are significant limitations to way that 'things' are represented and a similar degree of limitation to the way time is handled. Couple these limitations together and we have a degree of representation imperfection that is no longer warranted and shouldn't be tolerated.
+
+Computing technology is now in a state that we believe allows us to contemplate a step change in the way that we describe real objects and change events. Such a step change might well be referred to as a paradigm shift but we're not going to claim that sort of territory as yet: time will tell. However, we do believe that the change of approach and the resulting 'way of doing' that we're aiming for could well land us all in a paradigm shift.
+
+We draw on the work of Chris Partridge in particular and most immediately, as well as much experience in attempts at meeting information needs in the face of a continuously changing world. No doubt as we go through time, our list of acknowledgements will grow and we will endeavour not to leave anyone off the list. We expect to face large numbers of challenges - creating 'a better way' is hard work, always attracts counter-forces and maybe we get some luck along the way too..
+
+# Problem dissolution
+
+Formal problem solving techniques identify three types of problem elimination, each of which more completely prevents a problem resurfacing.   
+
+
+---
+summary: What's our purpose? What problem(s) are we trying to dissolve? What makes us think we might have a means for dissolution?
+---
+sort_order: 1
